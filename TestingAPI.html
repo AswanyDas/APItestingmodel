@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API TESTING</title>
+  <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <h1>API TESTING</h1>
+    <div>
+<form id="myForm" method="get">
+    <label type="text"></label>
+    <input type="text" name="API" placeholder="API"></input>
+    <label type="text"></label><br><br>
+    <input type="url" name="url" placeholder="URL"></input>
+    <label for="schema"></label><br><br>
+    <select name="schema" id="schema">
+        <option value="get">GET</option>
+        <option value="post">POST</option>
+        <option value="put">PUT</option>
+        <option value="patch">PATCH</option>
+        <option value="delete">DELETE</option>
+    </select><br><br>
+    <label for="postinput"></label>
+    <textarea id="input" name="input" rows="10" cols="50"></textarea><br><br>
+    <button type = "submit">Submit</button>
+    <button type ="clear" onclick = "deleteData();">Clear</button><br>
+    <br><textarea id="output" name="output" rows="10" cols=100></textarea><br>
+    <table border= 1 id ="mytbl" class ="right" style="float:right">
+        <tr>
+            <td>APIName</td>
+            <td>URL</td>
+            <td>schema</td>
+            <td>input</td>
+            <td>    </td>
+        </tr>
+    </table> 
+    </div>
+</form>
+<script src= "api.js"></script>
+</body>
+
+</html>
